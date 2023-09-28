@@ -44,7 +44,7 @@ function getDisplayData(res){
         const tempRange = document.querySelector(".temp-range")
         city.innerHTML = `${res.name}, ${res.sys.country}`;
         date.innerHTML = getDated()
-        temp.innerHTML = `Temp : ${Math.round(res.main.temp)}`
+        temp.innerHTML = `Temp : ${Math.round(res.main.temp)}°C`
         weather.innerHTML = `Weather : ${ res.weather[0].main}`
         tempRange.innerHTML = `Temp Range: ${res.main.temp_max} / ${res.main.temp_min} `
     }
